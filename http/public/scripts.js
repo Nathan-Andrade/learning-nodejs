@@ -3,7 +3,7 @@ const input = document.querySelector("input");
 const form = document.querySelector('form');
 
 async function load(){
-   const res = await fetch("https://localhost:3333/").then((data) => data.json())
+   const res = await fetch("http://localhost:3333/").then((data) => data.json())
    
    res.urls.map(({name, url}) => addElement({name, url}))
 }
